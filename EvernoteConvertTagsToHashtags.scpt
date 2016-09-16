@@ -1,3 +1,10 @@
+--I wanted to import my Evernote notes into Apple Notes, but Apple doesn't have tags (yet. Why?!). 
+--This selects notes with a certain tag, and adds it as a hashtag at the end, and retains the last modification date before the change.
+
+--Shoutouts:
+--* workaround for the problematic "append" function: https://discussion.evernote.com/topic/67653-applescript-and-append/?page=2#comment-369577
+--* for the repeat part: https://gist.github.com/brandonpittman/5641694
+
 tell application "Evernote"
 	--find all the notes with the tag "Important"; change this to whatever you want
 	set myNote to (find notes "tag:Important")
